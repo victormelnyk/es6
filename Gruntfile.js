@@ -6,7 +6,9 @@ module.exports = function(grunt) {
         node: true,
         esversion: 6,
         globals: {
-          l: true
+          d: true,
+          l: true,
+          logHeader: true
         }
       }
     },

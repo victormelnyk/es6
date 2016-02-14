@@ -1,3 +1,3 @@
 "use strict";
 
-l('Finish');
+logHeader('Finish');
