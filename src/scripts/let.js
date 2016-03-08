@@ -72,7 +72,9 @@ try {
 
 // test 5
 for (let value8 = 0; value8 < 5; value8++) {
+  /* jshint ignore:start */
   setTimeout(function() {
     l(value8); //0 1 2 3 4
   });
+  /* jshint ignore:end */
 }

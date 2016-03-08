@@ -1,6 +1,7 @@
 'use strict';
 logHeader('Classes');
 
+// test 1
 class Animal {// parent class
   constructor(name) {
     this.name = name;
@@ -58,7 +59,7 @@ l(Rabbit.type);// Rabbit
 var rabbitTonny = Rabbit.createTonny();
 rabbitTonny.showName();// Tonny
 
-
+// test 2
 var User = class {// class expresion
   sayHi() {
     l('Hi!');
