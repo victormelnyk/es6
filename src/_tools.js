@@ -1,20 +1,20 @@
 "use strict";
 
-function l() {
+var h = {}; // helper
+
+h.l = function() {
   console.log.apply(console, arguments);
-}
+};
 
-function d() {
+h.d = function() {
   console.info.apply(console, arguments);
-}
+};
 
-function logHeader(value) {
+h.logHeader = function(value) {
   console.log(' \n', value);
-}
+};
 
-//! for node
+// for node
 try {
-  GLOBAL.d = d;
-  GLOBAL.l = l;
-  GLOBAL.logHeader = logHeader;
-} catch(error) {}
+  GLOBAL.h = h;
+} catch (error) {}

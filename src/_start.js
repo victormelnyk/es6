@@ -1,3 +1,3 @@
 "use strict";
 
-logHeader('Start');
+h.logHeader('Start');

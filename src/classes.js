@@ -1,5 +1,5 @@
 'use strict';
-logHeader('Classes');
+h.logHeader('Classes');
 
 // test 1
 class Animal {// parent class
@@ -8,25 +8,25 @@ class Animal {// parent class
   }
 
   get name() {// getter
-    d('getter', 'name', this._name);
+    h.d('getter', 'name', this._name);
     return this._name;
   }
 
   set name(value) {// setter
-    d('setter', 'name', value);
+    h.d('setter', 'name', value);
     this._name = value;
   }
 
   showName() {
-    l(this.name);
+    h.l(this.name);
   }
 
   walk() {
-    l('I walk');
+    h.l('I walk');
   }
 
   ['go'.toUpperCase()]() {
-    l('GO!');
+    h.l('GO!');
   }
 }
 
@@ -37,7 +37,7 @@ class Rabbit extends Animal {// children class
 
   walk() {
     super.walk();// call parent method
-    l('...and jump!');
+    h.l('...and jump!');
   }
 
   static createTonny() {// static method
@@ -51,18 +51,18 @@ class Rabbit extends Animal {// children class
 
 var rabbit = new Rabbit('Bunny');
 rabbit.showName();// Bunny
-rabbit.walk();//I walk \n ...and jump!
+rabbit.walk();// I walk \n ...and jump!
 rabbit.GO();// GO!
 
-l(Rabbit.type);// Rabbit
+h.l(Rabbit.type);// Rabbit
 
 var rabbitTonny = Rabbit.createTonny();
 rabbitTonny.showName();// Tonny
 
 // test 2
-var User = class {// class expresion
+var User = class {// class expression
   sayHi() {
-    l('Hi!');
+    h.l('Hi!');
   }
 };
 

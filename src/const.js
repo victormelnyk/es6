@@ -1,2 +1,2 @@
 'use strict';
-logHeader('Const');
+h.logHeader('Const');
