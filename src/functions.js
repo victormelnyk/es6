@@ -1,5 +1,6 @@
 (function() {
   'use strict';
 
-  h.logHeader('Finish');
+  h.logHeader('Functions');
 })();
+

@@ -1,3 +1,5 @@
-"use strict";
+(function() {
+  'use strict';
 
-h.logHeader('Start');
+  h.logHeader('Start');
+})();

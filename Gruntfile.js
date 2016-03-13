@@ -1,20 +1,8 @@
 module.exports = function(grunt) {
   grunt.initConfig({
-    jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js'],
-      options: {
-        node: true,
-        esversion: 6,
-        globals: {
-          d: true,
-          l: true,
-          logHeader: true
-        }
-      }
-    },
     watch: {
-      files: ['src/**/*'],
-      tasks: ['jshint'],
+      files: ['src/**/*', 'index.html'],
+      tasks: [],
       options: {
         spawn: false,
         livereload: true
@@ -22,8 +10,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('default', ['jshint', 'watch']);
+  grunt.registerTask('default', ['watch']);
 };
